@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="ar">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name = "keywords" content = "oil, moringa, argan ,اركان , زيوت, تجميل ,الشعر"> 
+    <meta name = "description" content = "عناية الشعر بالزيوت الطبيعية  مع اعشاب الشاي وجميع مستلزماتك الصحية">
+    <title>Oils-mani </title>
+    <link rel="icon" href="image/hanna.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="bot.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!-- script google adsens -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1321444896638265"crossorigin="anonymous"></script>
+  </head>
+  <body id="body" class="light-mode loading">
+    <!--  -->
+    <style>
+
+      .loading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        border-radius: 50%;
+        background: #D1DA21;
+        animation: anime 2s linear 0s infinite alternate;
+      }
+      .loading:before{
+        content: '';
+        width: 80px;
+        height: 80px ;
+        background: #13BF5F;
+        border-radius: 50%;
+      }
+      .loading *{
+        display: none;
+      }
+      @keyframes anime{
+        0%{
+          transform:scale(1);
+        }
+        50%{
+          transform:scale(0.6);
+        }
+        100%{
+          transform:scale(0);
+        }
+      }
+          *{
+              margin: 0;
+              padding: 0;
+             
+          }
+          </style>
+      <!-- NAVBAR -->
+      <nav class="navbar bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="image/logoo.png" width="230px" height="30px"></a>
+          <div class="balo"><!--dark mod!!-->
+            <button type="button" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode"><i id="light" class="fa-solid fa-moon" onclick="changeIcon(this)"></i></button>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <ion-icon class="navicon" name="list-outline"></ion-icon>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><b>O'</b>lsmani</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body text-center">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="oil.html">الزيوت</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="they.html">اعشاب الشاي</a>
+                </li>
+                    <li class="nav-item"><a class="nav-link" href="overweight.html">زيادة الوزن </a></li>
+              </ul>
+              <!--form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">بحث</button>
+              </form-->
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- *************** -->
+      <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="image/hanabg.jpg"></div>
+        <div class="swiper-slide"><img src="image/logo2.jpg"></div>
+        <div class="swiper-slide"><img src="image/logo3.jpg"></div>
+        <div class="swiper-slide"><img src="image/logo1.jpg"></div>
+      </div>
+      <div class="swiper-scrollbar"></div>
+    </div>
+    <!--run scrol-->
+    <div class="horizontal-scroll mt-2">
+    <div class="card1">
+    <div id="inner">
+    <img src="image/scrl1.png" data-bs-toggle="modal" data-bs-target="#m2">
+    <h3>أفضل مبيعات</h3>
+    </div>
+    </div>
+    <div class="card1">
+    <div id="inner">
+    <img src="image/1 (7).jpg" data-bs-toggle="modal" data-bs-target="#m7">
+    <h3>منتج جديد</h3>
+    </div>
+    </div>
+    <div class="card1">
+    <div id="inner">
+    <img src="image/hanna.jpg" data-bs-toggle="modal" data-bs-target="#m4">
+    <h3>حناء حسب اللون</h3>
+    </div>
+    </div>
+    <div class="card1">
+    <div id="inner" data-bs-toggle="modal" data-bs-target="#m9">
+    <img src="image/thevert.jpg"/>
+    <h3>أعشاب الشاي</h3>
+    </div>
+    </div>
+    <div class="card1">
+      <div id="inner">
+      <img src="image/kabsol.png">
+      <h3>زيت كبسولات</h3>
+      </div>
+      </div>
+    </div>
+    <!-- ¡¡¡end scrol--!!button group-->
+    <div class="group-btn">
+      <form action="https://www.google.com" method="get">
+        <span onclick="serch()"><input type="search" id="serch"><ion-icon name="search-outline"></ion-icon></span>
+      </form>
+      <button>الزيوت</button>
+      <button><a href="they.html"> أعشاب الشاي</a></button>
+      <button><a href="index.html"> الرئيسية</a></button>
+    </div>
+    <!--========== Modal --><!--1---=============================================================-->
+    <div class="modal fade" id="m1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+    <h5 class="modal-title" id="exampleModalLabel">دهان النعام</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+    <img src="image/dahannaam.jpg">
+    <p class="text-center">بخاخ دهن النعام مساج لجميع اعصاء الجسم</p>
+    </div>
+    </div>
+    </div>
+    </div><!--2-->
+    <div class="modal fade" id="m2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+    <h5 class="modal-title" id="exampleModalLabel">جوز الهند</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+    <img src="image/1 (34).jpg">
+    <p class="text-center"> Eet Kزيت جوز الهند يساعد في منع تساقط الشعر=غني بفيتامينوالحديد ويجعل الشعر قويا واكثر لمعانا </p>
+    </div>
+    </div>
+    </div>
+    </div><!--3-->
+    <div class="modal fade" id="m3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+      <div class="modal-content">
+      <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel"> زيت المعجزة</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <img src="image/1 (32).jpg">
+      <p class="text-center">زيت المعجزة مصنوع من الزيوت الطبيعية يساعد في ترطيب الشعرس</p>
+      </div>
+      </div>
+      </div>
+      </div><!--4-->
+      <div class="modal fade" id="m4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+      <div class="modal-content">
+      <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel"> حناء في عدة الوان + بخور</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <img src="image/hanna.jpg">
+      <p class="text-center">حناء في عدة الوان  تعطي الوان ممتازة في وقت قصير </p>
+      </div>
+      </div>
+      </div>
+      </div><!--5-->
+      <div class="modal fade" id="m5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"> زيت المورينجا</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        <img src="image/1 (18).jpg">
+
+        <p class="text-center"> زيت المورينغا يساعد في احياء الشعر الباهث الجاف</p>
+
+        </div>
+        </div>
+        </div>
+        </div><!--6-->
+        <div class="modal fade" id="m6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+          <div class="modal-content">
+          <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"> حناء على شكل معجون في عدة الوان</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+          <img src="image/2.jpg">
+          <p class="text-center">لحناء الطبيعية من هيماني تتكون فقط من مكونات طبيعية. لا يحتوي على أي مركبات صناعية أو كيميائية لها آثار ضارة على الجلد. جميع مكوناته نباتية وصحية. وتشمل هذه المكونات معجون الحناء الطبيعي وزيت الحنة والصبغة الحافظة والماء المقطر لا تستخدميه على الرموش أو الحواجب</p>
+          </div>
+          </div>
+          </div>
+          </div><!--7-->
+          <div class="modal fade" id="m7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"> زيت جوز الهند ـ بكر</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <img src="image/1 (7).jpg">
+            <p class="text-cener">يحتوي زيت جوز الهند العضوي على أحماض دهنية متوسطة السلسلة (MCFA) يمكنها تحسين صحتك بعدة طرق ، زيت جوز الهند البكر العضوي هو أحد أذكى الخيارات للدهون الجيدة التي يمكنك إضافتها إلى نظامك الغذائي.</p>
+            </div>
+            </div>
+            </div>
+            </div><!--8-->
+            <div class="modal fade" id="m8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+              <div class="modal-content">
+              <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel"> عود القسط مسحوق</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+              <img src="image/kist.png">
+              <p class="text-center">لدى الكاهن الهندي العديد من الفوائد: - يمكن أن يعالج التهاب البلعوم والتهاب الحنك الرخو. ويمكن أيضا أن تستخدم لعلاج اللوزتين. - تنظيف وطرد الميكروبات. - تخفيض مستوى الجلوكوز في الدم .. - يساعد على خفض ضغط الدم. - انخفاض مستوى الكوليسترول. - وله خاصية تنشيط الدودة من فوائد الدم من استخدام الهرمونات والغدد ويمكن استخدام شريحة هندية لغرض علاج المشاكل التي قد تحدث عند مستوى الجيوب الأنفية.</p>
+              </div>
+              </div>
+              </div>
+              </div><!--أعشاب الشاي 9 -->
+              <div class="modal fade" id="m9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"> أعشاب الشاي</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                <img src="imgtai/2.png">
+                </div>
+                </div>
+                </div>
+                </div><!--coco-->
+                <div class="modal fade" id="m10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                  <div class="modal-content">
+                  <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">  زيت جوز الهند</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                  <img src="image/coco.jpeg">
+                  <p class="text-center">زيت جوز الهند صالحة للشعر مغدية وتساعد في تعزيز وتطويل الشعر</p>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+                  <div class="modal fade" id="m11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">زيت كبسولات</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <img src="image/kbc1.jpeg">
+                    <p class="text-center">زيت كبسولات للشرب
+                      زيت حب الرشاد: مليئة بعنصر الحديد
+                     زيت القسط الهندي: المقوي الصحي
+                     زيت البروستاتا:داعم البروستاتاالصحي
+                     زيت الشيا شراب الطاقة
+                     زيت الكتان: اوميغا 3 ماكس
+                     زيت الثوم:معزز الصحة متعدد الفوائد
+                     زيت الجينسينغ :المنشط الفائق
+                     زيت العكبر :المناعة إيس
+                     زيت المورينغا: سوبر فود</p>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="modal fade" id="m12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                      <div class="modal-content">
+                      <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">زيت كبسولات</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                      <img src="image/oilhya.jpeg">
+                      <p class="text-center">العلامة التجارية هيماني الحقيقية زيت ثعبان زيت ثعبان زيت الشعر ، وتسمى أيضًا "زيت كوبرا" أو "زيت الثعبان" باللغة الإنجليزية ، ليست ، في الواقع ، تتكون من "ثعبان" ولكن من مزيج من العديد من الزيوت النباتية مع إجراءات مفيدة بشكل خاص للشعر ،</p>
+                      </div>
+                      </div>
+                      </div>
+                      </div>
+                      <div class="modal fade" id="m13" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">زيت الورد</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        <img src="image/oilwrd.jpeg">
+                        <p class="text-center"> زيوت طبيعية لائقة للشعر والتجميل في نفس الوقت جميع الزيوت متوفرة لدى هيماني</p>
+                        </div>
+                        </div>
+                        </div>
+                        </div><!--تنبيهات الزائد-->
+                <div class="toast-container position-fixed top-0 end-0 p-3">
+                <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                <img src="image/moi.jpg" class="rounded me-2" width="20%">
+                <strong class="me-auto">  رشيد فتحي</strong>
+                <small>* متصل حاليا</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body text-center"> الملف الشخصي</div>
+                <div class="toast-body text-center">
+                  <span><a href="https://wa.me/qr/F7HYZFVITLEJI1"><ion-icon name="logo-whatsapp"></ion-icon></a></span>
+                  <span><a href="http://instagram.com/oilsmani?utm_source=qr" ><ion-icon name="logo-instagram"></ion-icon></a></span>
+                </div>
+                </div>
+                </div>
+    <!-- play in boxing---  ====================================================================-->
+    <div id="b1" class="container b-box">
+        <div class="row">
+           <div class="col-6 col-md-3"><!--1-->
+             <div class="m-box">
+               <img src="oil/krnf.jpeg" data-bs-toggle="modal" data-bs-target="#m1">
+               <p>زيت القرنفل</p>
+               <span><ion-icon name="eye-outline" data-bs-toggle="modal" data-bs-target="#m1"></ion-icon></span>
+               <div class="titl">
+                 <p>زيت القرنفل 10 مل</p>
+                 <b> د.م 29.00</b>
+    
+                 <ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon>
+               </div>
+  
+             </div>
+           </div>
+           <div class="col-6 col-md-3"><!--2-->
+            <div class="m-box">
+              <img src="oil/oil1.jpeg"modal" data-bs-target="#m2">
+              <span><ion-icon name="eye-outline" data-bs-toggle="modal" data-bs-target="#m2"></ion-icon></span>
+              <div class="titl">
+                <p>  زيت للشعر</p>
+                <b>99.00 د.م</b>
+                <ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3"><!--3-->
+            <div class="m-box">
+              <img src="oil/oil2.jpeg" data-bs-toggle="modal" data-bs-target="#m3">
+              <span><ion-icon name="eye-outline" data-bs-toggle="modal" data-bs-target="#m3"></ion-icon></span>
+              <div class="titl">
+                <p>مسحوق بخور الصندل  </p>
+                <b>57.00 dh</b>
+                <ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3"><!--4-->
+            <div class="m-box">
+              <img src="oil/oil3.jpeg" data-bs-toggle="modal" data-bs-target="#m4">
+              <span><ion-icon name="eye-outline" data-bs-toggle="modal" data-bs-target="#m4"></ion-icon></span>
+              <div class="titl">
+                <p>زيت التنحيف     </p>
+                <b>89.00 dh</b>
+                <ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-6 col-md-3"><!--5-->
+            <div class="m-box">
+              <img src="image/shampo.png" data-bs-toggle="modal" data-bs-target="#m5">
+              <span><ion-icon name="eye-outline" data-bs-toggle="modal" data-bs-target="#m5"></ion-icon></span>
+              <div class="titl">
+                <p>شامبوان مضاد للتساقط </p>
+                <b>89.00 dh</b>
+                <ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3"><!--6-->
+           <div class="m-box">
+             <img src="oil/quick fit.jpeg" data-bs-toggle="modal" data-bs-target="#m6">
+             <span><ion-icon name="eye-outline" data-bs-toggle="modal" data-bs-target="#m6"></ion-icon></span>
+             <div class="titl">
+               <p>    مساج كويك فيت</p>
+               <b>45.00 dh</b>ش
+               <ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></ion-icon><ion-icon name="star-outline"></ion-icon>
+             </div>
+           </div>
+         </div>
+    
+ 
+    <footer class=""><!--$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+       <div class="mx-5">
+       <hr>
+       <img src="image/logoo.png" width="300px" height="30px"><hr>
+       <div class="cont">
+         <h5><b>O</b>ilsMani</h5>
+         <span></span>
+         <h4> " Vivre La Nature_عيش الطبيعة"</h4>
+         <b>"التجربة خير برهان"</b>
+          
+         <p>التوصيل الى باب المنزل</p>
+         <p>اختيار المنتوج المناسب</p>
+       </div>
+       <div class="cont">
+         <h5>ايام العمل</h5>
+         <span></span>
+         <p>متوفر على طول الاسبوع </p>
+         <p>احسن وقت لتوصيل  :</p>
+         <p>18:00 الى 22:00</p>
+       </div>
+       <hr>
+          <p>
+            جميع الحقوق محفوظة لدى هيماني 2022©
+          </p>
+       </div>
+   </footer>
+   <div class="mune"><!--mune-flex-->
+      <div class="mune-flex">
+         <span><a><ion-icon name="home-outline"></ion-icon></a></span>
+         <span><ion-icon name="happy-outline" type="button" id="liveToastBtn"></ion-icon></span>
+         <span><a href="https://wa.me/qr/F7HYZFVITLEJI1"><ion-icon name="logo-whatsapp"></ion-icon></a></span>
+         <span><a href="http://instagram.com/oilsmani?utm_source=qr" ><ion-icon name="logo-instagram"></ion-icon></a></span>
+     </div>
+  </div>
+    <script type="module" src ="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> 
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="bot.js"></script>
+    <script src="java.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

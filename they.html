@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="ar">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name = "keywords" content = "oil, moringa, argan ,اركان , زيوت, تجميل ,الشعر"> 
+    <meta name = "description" content = "عناية الشعر بالزيوت الطبيعية  مع اعشاب الشاي وجميع مستلزماتك الصحية">
+    <title>Oils-mani </title>
+    <link rel="icon" href="image/hanna.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="bot.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!-- script google adsens -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1321444896638265"crossorigin="anonymous"></script>
+  </head>
+  <body id="body" class="light-mode loading">
+    <!--  -->
+    <style>
+
+      .loading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        border-radius: 50%;
+        background: #D1DA21;
+        animation: anime 2s linear 0s infinite alternate;
+      }
+      .loading:before{
+        content: '';
+        width: 80px;
+        height: 80px ;
+        background: #13BF5F;
+        border-radius: 50%;
+      }
+      .loading *{
+        display: none;
+      }
+      @keyframes anime{
+        0%{
+          transform:scale(1);
+        }
+        50%{
+          transform:scale(0.6);
+        }
+        100%{
+          transform:scale(0);
+        }
+      }
+          *{
+              margin: 0;
+              padding: 0;
+             
+          }
+          </style>
+      <!-- NAVBAR -->
+      <nav class="navbar bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="image/logoo.png" width="230px" height="30px"></a>
+          <div class="balo"><!--dark mod!!-->
+            <button type="button" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode"><i id="light" class="fa-solid fa-moon" onclick="changeIcon(this)"></i></button>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <ion-icon class="navicon" name="list-outline"></ion-icon>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><b>O'</b>lsmani</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body text-center">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="oil.html">الزيوت</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="they.html">اعشاب الشاي</a>
+                </li>
+                    <li class="nav-item"><a class="nav-link" href="overweight.html">زيادة الوزن </a></li>
+              </ul>
+              <!--form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">بحث</button>
+              </form-->
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Swiper ***************-->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="imgtai/1 (6).jpg"></div>
+        <div class="swiper-slide"><img src="imgtai/12.jpg"></div>
+        <div class="swiper-slide"><img src="imgtai/8.png"></div>
+        <div class="swiper-slide"><img src="imgtai/6.png"></div>
+      </div>
+      <div class="swiper-scrollbar"></div>
+    </div>
+    <!--run scrol  slider-->
+    <div class="horizontal-scroll mt-2">
+    <div class="card1">
+    <div id="inner">
+    <img src="image/scrl1.png" data-bs-toggle="modal" data-bs-target="#m2">
+    <h3>أفضل مبيعات</h3>
+    </div>
+    </div>
+    <div class="card1">
+    <div id="inner">
+    <img src="image/1 (7).jpg" data-bs-toggle="modal" data-bs-target="#m7">
+    <h3>منتج جديد</h3>
+    </div>
+    </div>
+    <div class="card1">
+    <div id="inner">
+    <img src="image/hanna.jpg" data-bs-toggle="modal" data-bs-target="#m4">
+    <h3>حناء حسب اللون</h3>
+    </div>
+    </div>
+    <div class="card1">
+    <div id="inner" data-bs-toggle="modal" data-bs-target="#m9">
+    <img src="image/thevert.jpg"/>
+    <h3>أعشاب الشاي</h3>
+    </div>
+    </div>
+    <div class="card1">
+      <div id="inner">
+      <img src="image/kabsol.png">
+      <h3>زيت كبسولات</h3>
+      </div>
+      </div>      
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#00cba9" fill-opacity="1" d="M0,288L12.6,250.7C25.3,213,51,139,76,96C101.1,53,126,43,152,37.3C176.8,32,202,32,227,53.3C252.6,75,278,117,303,149.3C328.4,181,354,203,379,181.3C404.2,160,429,96,455,106.7C480,117,505,203,531,240C555.8,277,581,267,606,229.3C631.6,192,657,128,682,117.3C707.4,107,733,149,758,176C783.2,203,808,213,834,197.3C858.9,181,884,139,909,101.3C934.7,64,960,32,985,37.3C1010.5,43,1036,85,1061,112C1086.3,139,1112,149,1137,160C1162.1,171,1187,181,1213,176C1237.9,171,1263,149,1288,160C1313.7,171,1339,213,1364,240C1389.5,267,1415,277,1427,282.7L1440,288L1440,0L1427.4,0C1414.7,0,1389,0,1364,0C1338.9,0,1314,0,1288,0C1263.2,0,1238,0,1213,0C1187.4,0,1162,0,1137,0C1111.6,0,1086,0,1061,0C1035.8,0,1011,0,985,0C960,0,935,0,909,0C884.2,0,859,0,834,0C808.4,0,783,0,758,0C732.6,0,707,0,682,0C656.8,0,632,0,606,0C581.1,0,556,0,531,0C505.3,0,480,0,455,0C429.5,0,404,0,379,0C353.7,0,328,0,303,0C277.9,0,253,0,227,0C202.1,0,177,0,152,0C126.3,0,101,0,76,0C50.5,0,25,0,13,0L0,0Z"></path></svg>
+    <!-- ¡¡¡end scrol--!!button group-->
+    <div class="group-btn">
+      <form action="https://www.google.com" method="get">
+	        <span id="srch"  onclick="serch()"><input type="search" id="serch"><ion-icon name="search-outline"></ion-icon></span>
+      </form>
+      <button><a href="oil.html"> الزيوت</a></button>
+      <button> أعشاب الشاي</button>
+      <button><a href="index.html">الرئيسية</a> </button>
+    </div>
+              <!-- Modal --><!--1--===========================================================-->
+              <!-- play in boxing---  ====================================================================-->
+       <div class="container mb-3">
+         <div class="row mt-5">
+           <div class="col-md-4">
+             <div class="box-th">
+               <div class="b-th-min">
+                <img src="imgtai/1 (6).jpg" alt="">
+                <p class="charh">
+                  شاي سليم لتنحيف ينقص من الوزن ويهدئ الأعصاب
+                  </p>
+                <div class="text-th">
+                  <h2><span>slim tea</span></h2>
+                </div>
+               </div>
+               <div class="titl-th mx-3">
+               <div class="titl-th-oin">
+                  <ion-icon class="ion" name="thumbs-up"></ion-icon>
+                  <b>42 dh </b>
+ 	      	   </div>
+ 	      	   <div class="titl-th-tow">
+ 	      	   		<ion-icon name="eye"></ion-icon>
+                    <p>they</p>
+               </div>
+               </div>
+             </div>
+           </div>
+
+           <div class="col-md-4">
+            <div class="box-th">
+              <div class="b-th-min">
+               <img src="the/2.png" alt="">
+               <div class="text-th">
+                <h2><span>lwiza tea</span></h2>
+              </div>
+              </div>
+              <div class="titl-th mx-3">
+                <div class="titl-th-oin">
+                <ion-icon name="thumbs-up"></ion-icon>
+                <b>42 dh </b>
+                </div>
+                <div class="titl-th-tow">
+                <ion-icon name="bicycle"></ion-icon>
+                <p>they</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="box-th">
+              <div class="b-th-min">
+               <img src="imgtai/1 (6).jpg" alt="">
+               <div class="text-th">
+                <h2><span>slim tea</span></h2>
+              </div>
+              </div>
+              <div class="titl-th mx-3">
+                <div class="titl-th-oin">
+                <ion-icon name="thumbs-up"></ion-icon>
+                <b>42 dh </b>
+                </div>
+                <div class="titl-th-tow">
+                <ion-icon name="bicycle"></ion-icon>
+                <p>they</p>
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
+       </div>
+    <footer class="mt-5"><!--FOOTER++++++++++++++++++++++++++++-->
+       <div class="mx-5">
+       <hr>
+       <img src="image/logoo.png" width="300px" height="30px"><hr>
+       <div class="cont">
+         <h5><b>O</b>ilsMani</h5>
+         <span></span>
+         <h4>"عيش الطبيعة_Vivre La Nature" <Label></Label></h4>
+         <h5>التجربة خير برهان</h5>
+         <p>التوصيل الى باب المنزل</p>
+         <p>اختيار المنتوج المناسب</p>
+       </div>
+       <div class="cont">
+         <h5>ايام العمل</h5>
+         <span></span>
+         <p>متوفر على طول الاسبوع </p>
+         <p>احسن وقت لتوصيل  :</p>
+         <p>18:00 الى 22:00</p>
+       </div>
+       <hr>
+          <p>
+            جميع الحقوق محفوظة لدى هيماني 2022©
+          </p>
+       </div>
+   </footer>
+   <div class="mune"><!--mune-flex-->
+      <div class="mune-flex">
+         <span><a href="index.html"><ion-icon name="home-outline"></ion-icon></a></span>
+         <span><ion-icon name="happy-outline" type="button" id="liveToastBtn"></ion-icon></span>
+         <span><a href="https://wa.me/qr/F7HYZFVITLEJI1"><ion-icon name="logo-whatsapp"></ion-icon></a></span>
+         <span><a href="http://instagram.com/oilsmani?utm_source=qr" ><ion-icon name="logo-instagram"></ion-icon></a></span>
+     </div>
+  </div>
+    <script type="module" src ="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> 
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="bot.js"></script>
+    <script src="java.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
