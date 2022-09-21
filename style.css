@@ -12,16 +12,61 @@ a:link{text-decoration: none;}
 .navicon{
     font-size:30px;
 }
+.offcanvas-body{background-color: rgb(174, 190, 178);}
 .nav-item{
+    display: flex;
+    justify-content:inherit;
+    align-items: center;
     width: 100%;
-    border-bottom: 0.3px solid gray;
+    height: 50px;
+    margin-top: 8px;
+    background-color: white;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 -2px 4px -2px rgb(0 0 0 / 0.1);
+    border-radius: 20px;
+}
+.nav-item span , .serh{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin: 2px 15px;
+    border-radius: 50%;
+}
+.nav-item:nth-child(1) span{background-color: crimson;}
+.nav-item:nth-child(2) span{background-color: #ecb723;}
+.nav-item:nth-child(3) span{background-color: #129453;}
+.nav-item:nth-child(4) span{background-color: #8f10c2;}
+.nav-item:nth-child(5) span{background-color: #808080;}
+.serh{background-color: #0add69;}
+.nav-item ion-icon,form span ion-icon{
+    font-size: 20px;
+    color: #eee;
 }
 .nav-link{
     font-weight: 700;
     text-shadow: 1px 1px 1px crimson;
+    margin-right: 10px;
 }
-.nav-link:hover{color: #eee;}
-.nav-item:hover{background-color: #ecb723;border: none;}
+.nav-link:hover{
+    color: #eee;   
+}
+.nav-item:hover{
+    background-color: #ecb723;
+    border: 2px solid crimson;
+
+}
+form span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 95%;
+    height: 50px;
+    background-color: white;
+    border-radius: 20px;
+    padding-left: 5px;
+}
 /*dark light mod ------------------------*/
 body.dark-mode .b-box{
     background-color: #111;
