@@ -25,130 +25,84 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="flex">
     <style>
         body {
             width: 100%;
             height: 100vh;
-            background-image: url("https://images.pexels.com/photos/4198713/pexels-photo-4198713.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
-            background-size: cover;
-            background-repeat: none-repeat;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .b-box {
+            height: 90%;
+        }
+        
+        .box img {
+            border-radius: 22px;
+            width: 80%;
         }
         
         .b-start {
             position: absolute;
-            bottom: 3em;
-        }
-        
-        @import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
-        h5 {
-            font-size: calc(13px + 2vh);
-            line-height: calc(10px + 4vh);
-            text-shadow: 0 0 5px #9e026a, 0 0 15px #9f0db3, 0 0 20px #971c6e, 0 0 40px #bb0a5c, 0 0 60px #ff0000, 0 0 10px #ab11b1, 0 0 98px #ff0000;
-            color: #aa1043;
-            font-family: "Sacramento", cursive;
-            text-align: center;
-            animation: blink 18s infinite;
-            -webkit-animation: blink 5s infinite;
-        }
-        
-        @-webkit-keyframes blink {
-            20%,
-            24%,
-            55% {
-                color: #111;
-                text-shadow: none;
-            }
-            0%,
-            19%,
-            21%,
-            23%,
-            25%,
-            54%,
-            56%,
-            100% {
-                text-shadow: 0 0 5px #16cf44, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
-                color: #fff6a9;
-            }
-        }
-        
-        @keyframes blink {
-            20%,
-            24%,
-            55% {
-                color: #111;
-                text-shadow: none;
-            }
-            0%,
-            19%,
-            21%,
-            23%,
-            54%,
-            56%,
-            100% {
-                text-shadow: 0 0 5px #ff00bf, 0 0 15px #9e1130, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
-                color: #fff6a9;
-            }
+            bottom: 1em;
         }
     </style>
-    <div>
 
-        <div class=" ">
-            <div class="text-center w-full mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
-                <h2 class="text-3xl font-extrabold text-white dark:text-white sm:text-4xl">
-                    <span class="block">
-                        كل مستلزمات المطبخ
-       		        </span>
-                    <div class="mt-5">
-                        <h5>
-                            توابل , فواكه مجففة , ماسكات التجميل , زيوت , أعشاب طبية , وأشياء أخرى تجدونها
-                        </h5>
+    <div class="w-80 shadow-lg b-box">
+        <div class="col">
+            <div class="box">
+                <div class="flex w-full h-6/4">
+                    <img class="h-80" src="https://images.pexels.com/photos/4198713/pexels-photo-4198713.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+                </div>
+                <div class="flex">
+                    <div class="w-96 md:w-2/3 space-y-4 p-4 ">
+                        <div class="flex justify-between item-center">
+
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" viewBox="0 0 20 20" fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                <p class="text-gray-600 font-bold text-sm ml-1">
+                                    4.96
+                                    <span class="text-gray-500 font-normal">(76 reviews)</span>
+                                </p>
+                            </div>
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-pink-500" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                            </div>
+
+                        </div>
+                        <h3 class="font-black text-gray-800 md:text-3xl text-xl text-end">كل مستلزمات المطبخ</h3>
+                        <p class="md:text-lg text-gray-500 text-center">توابل , فواكه مجففة , ماسكات التجميل , زيوت , أعشاب طبية , وأشياء أخرى تجدونها
+                        </p>
                     </div>
-                </h2>
+                </div>
+
+
             </div>
-        </div>
-    </div>
-    <div class="grid md:grid-cols-4 grid-cols-3">
-        <div class="b mx-auto h-16 w-28 flex justify-center items-center">
-            <div class="i h-12 w-28 bg-stone-50 items-center rounded-full shadow-inner cursor-pointer absolute overflow-hidden transform hover:scale-x-110 hover:scale-y-105 transition duration-300 ease-out">
+            <div class="b-start">
+                <div class=" animate-pulse mx-auto h-16 w-80 flex justify-center items-center">
+                    <div class="i h-16 w-8/12 bg-pink-600 items-center rounded-2xl shadow-2xl cursor-pointer absolute overflow-hidden transform hover:scale-x-110 hover:scale-y-105 transition duration-300 ease-out">
+                    </div>
+                    <a href="http://moringa.epizy.com/?i=1" class="text-center text-white font-semibold z-10">متابعة</a>
+                </div>
             </div>
-            <a href="http://moringa.epizy.com/pices.php" class="text-center text-blackwhite font-semibold z-10">توابل</a>
-        </div>
-        <div class="b mx-auto h-16 w-28 flex justify-center items-center">
-            <div class="i h-12 w-28 bg-stone-50 items-center rounded-full shadow-inner cursor-pointer absolute overflow-hidden transform hover:scale-x-110 hover:scale-y-105 transition duration-300 ease-out">
-            </div>
-            <a href="http://moringa.epizy.com/fruit.php" class="text-center text-blackwhite font-semibold z-10">فواكه مجففة </a>
-        </div>
-        <div class="b mx-auto h-16 w-28 flex justify-center items-center">
-            <div class="i h-12 w-28 bg-stone-50 items-center rounded-full shadow-inner cursor-pointer absolute overflow-hidden transform hover:scale-x-110 hover:scale-y-105 transition duration-300 ease-out">
-            </div>
-            <a href="http://moringa.epizy.com/tajmil.php" class="text-center text-blackwhite font-semibold z-10">ماسكات التجميل</a>
-        </div>
-        <div class="b mx-auto h-16 w-28 flex justify-center items-center">
-            <div class="i h-12 w-28 bg-stone-50 items-center rounded-full shadow-inner cursor-pointer absolute overflow-hidden transform hover:scale-x-110 hover:scale-y-105 transition duration-300 ease-out">
-            </div>
-            <a href="http://moringa.epizy.com/oils.php" class="text-center text-blackwhite font-semibold z-10">زيوت</a>
-        </div>
-        <div class="b mx-auto h-16 w-28 flex justify-center items-center">
-            <div class="i h-12 w-28 bg-stone-50 items-center rounded-full shadow-inner cursor-pointer absolute overflow-hidden transform hover:scale-x-110 hover:scale-y-105 transition duration-300 ease-out">
-            </div>
-            <a href="http://moringa.epizy.com/achab.php" class="text-center text-blackwhite font-semibold z-10">أعشاب طبية</a>
-        </div>
-        <div class="b mx-auto h-16 w-28 flex justify-center items-center">
-            <div class="i h-12 w-28 bg-stone-50 items-center rounded-full shadow-inner cursor-pointer absolute overflow-hidden transform hover:scale-x-110 hover:scale-y-105 transition duration-300 ease-out">
-            </div>
-            <a href="http://moringa.epizy.com/etc.php" class="text-center text-blackwhite font-semibold z-10">زيادة الوزن</a>
         </div>
     </div>
 
-    </div>
-    <div class="b-start">
-        <div class=" animate-pulse mx-auto h-16 w-screen flex justify-center items-center">
-            <div class="i h-16 w-8/12 bg-pink-600 items-center rounded-2xl shadow-2xl cursor-pointer absolute overflow-hidden transform hover:scale-x-110 hover:scale-y-105 transition duration-300 ease-out">
-            </div>
-            <a href="http://moringa.epizy.com/?i=1" class="text-center text-white font-semibold z-10">متابعة</a>
-        </div>
-    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 
