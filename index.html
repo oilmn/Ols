@@ -54,13 +54,19 @@
             position: absolute;
             bottom: 1em;
         }
+        .mySlides {
+        display: none;
+        }
     </style>
 
     <div class="w-80 shadow-lg b-box">
         <div class="col">
             <div class="box">
                 <div class="flex w-full h-6/4">
-                    <img class="h-80" src="https://images.pexels.com/photos/4198713/pexels-photo-4198713.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+                    <img class="w-full h-64 mySlides" src="https://cdn.discordapp.com/attachments/1057419543066198149/1062037939162460170/pexels-mehran-b-86649.jpg">
+                	<img class="w-full h-64 mySlides" src="https://cdn.discordapp.com/attachments/1057419543066198149/1057419951402663996/1671837732527.png" >
+                	<img class="w-full h-64 mySlides" src="https://cdn.discordapp.com/attachments/1057419543066198149/1057732474723106886/folfol-hlo.png">
+                	
                 </div>
                 <div class="flex">
                     <div class="w-96 md:w-2/3 space-y-4 p-4 ">
@@ -73,16 +79,16 @@
                                     </svg>
                                 <p class="text-gray-600 font-bold text-sm ml-1">
                                     4.96
-                                    <span class="text-gray-500 font-normal">(76 reviews)</span>
+                                    <span class="text-gray-500 font-normal">(76 مشاهدة )</span>
                                 </p>
                             </div>
-                            <div class="">
+                            <!--div class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-pink-500" viewBox="0 0 20 20" fill="currentColor">
                                         <path fill-rule="evenodd"
                                             d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
                                             clip-rule="evenodd" />
                                     </svg>
-                            </div>
+                            </div-->
 
                         </div>
                         <h3 class="font-black text-gray-800 md:text-3xl text-xl text-end">كل مستلزمات المطبخ</h3>
@@ -90,19 +96,34 @@
                         </p>
                     </div>
                 </div>
-
-
             </div>
             <div class="b-start">
-                <div class=" animate-pulse mx-auto h-16 w-80 flex justify-center items-center">
-                    <div class="i h-16 w-8/12 bg-pink-600 items-center rounded-2xl shadow-2xl cursor-pointer absolute overflow-hidden transform hover:scale-x-110 hover:scale-y-105 transition duration-300 ease-out">
+            <a href="http://moringa.epizy.com/?i=1" class="text-center text-white font-semibold z-10">
+                <div class=" animate-pulse mx-auto h-16 w-80 flex justify-center items-center">               
+                    <div class="i h-16 w-8/12 bg-pink-600 flex justify-center items-center rounded-2xl shadow-2xl cursor-pointer absolute overflow-hidden transform hover:scale-x-110 hover:scale-y-105 transition duration-300 ease-out">
+                    متابعة
                     </div>
-                    <a href="http://moringa.epizy.com/?i=1" class="text-center text-white font-semibold z-10">متابعة</a>
-                </div>
+                    </div></a>
             </div>
         </div>
     </div>
 
+	<script>
+	var myIndex = 0;
+	carousel();
+	
+	function carousel() {
+	var i;
+	var x = document.getElementsByClassName("mySlides");
+	for (i = 0; i < x.length; i++) {
+	x[i].style.display = "none";
+	}
+	myIndex++;
+	if (myIndex > x.length) {myIndex = 1}
+	x[myIndex-1].style.display = "block";
+	setTimeout(carousel, 3000); // Change image every 2 seconds
+	}
+	</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 
